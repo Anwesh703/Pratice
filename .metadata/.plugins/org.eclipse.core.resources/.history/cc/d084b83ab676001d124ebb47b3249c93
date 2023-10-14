@@ -1,0 +1,38 @@
+package Training;
+
+public class ConstructorExample {
+public int a;
+public int b;
+	//AccessModifier Classname()
+	public ConstructorExample() {
+		
+	}
+public ConstructorExample(int a,int b) {
+		 this.a=a;
+		 this.b=b;
+		 System.out.println("int and int values are displayed " +a+b);
+	}
+public ConstructorExample(int b) {
+	 System.out.println("int value is displayed " +b);
+}
+public ConstructorExample(double b) {
+	 System.out.println("double value is displayed " + b);
+}
+	public static void main(String[] args) {
+		ConstructorExample ce= new ConstructorExample();
+		ConstructorExample ce1= new ConstructorExample(312.3);
+		ConstructorExample ce2= new ConstructorExample(34);
+		ConstructorExample ce4= new ConstructorExample(53);
+		ConstructorExample ce3= new ConstructorExample(34,423);
+		try {
+			System.out.println(a);
+			System.out.println(b);
+			
+		} catch (Exception e) {
+			
+		}
+		
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;AutomationTesting.SeleniumTesting.Actions&apos; to &apos;ActionsExample&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumTesting&apos;&#x0D;&#x0A;- Original element: &apos;AutomationTesting.SeleniumTesting.Actions&apos;&#x0D;&#x0A;- Renamed element: &apos;AutomationTesting.SeleniumTesting.ActionsExample&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Actions&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;AutomationTesting.SeleniumTesting{Actions.java[Actions" matchStrategy="1" name="ActionsExample" qualified="false" references="true" similarDeclarations="false" stamp="1674622844858" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+io.cucumber.junit.UndefinedStepException: The step 'validate the browser' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("validate the browser")
+public void validate_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("browser is triggered")
+public void browser_is_triggered() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("check if browser is started")
+public void check_if_browser_is_started() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

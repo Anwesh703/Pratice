@@ -1,0 +1,50 @@
+package Training;
+
+public class MethodOverloading {
+	public static void main(String [] args) {
+//		Method1();
+//		Method1(int a);
+//		Method1(String b);
+//		Method1(int a, String b);
+//		Method1(int a, String b);
+//		
+//		Method1(String a, int b);
+//		Method1(int a, String b, int c);
+		MethodOverloading methodOverloading = new MethodOverloading();
+		
+//		methodOverloading.Method1("Sre");
+		methodOverloading.Method1(21,"212");
+		methodOverloading.Method1(21,"212");
+		methodOverloading.Method1(31,"string");
+		methodOverloading.Method1("gwds",21);
+		methodOverloading.Method1("gwds",21,312);
+		methodOverloading.Method1(78,21,312);
+		
+	}
+	
+	public void Method1() {
+		System.out.println("Method1 without aurguments");
+	}
+	public void Method1(int a) {
+		System.out.println("Method1 with int aurgument");
+	}
+	public void Method1(String a) {
+		System.out.println("Method1 with String aurgument");
+	}
+	public void Method1(int a,String b) {
+		System.out.println("Method1 with int & String aurgument");
+	}
+	public void Method1(int a,int b) {
+		System.out.println("Method1 with int & int aurgument");
+	}
+	public void Method1(String a,int b) {
+		System.out.println("Method1 with  String & int aurgument");
+	}
+	public void Method1(int a,int b,int c) {
+		System.out.println("Method1 with  int,int & int aurgument");
+	}
+	public void Method1(String a,int b,int c) {
+		System.out.println("Method1 with  String,int & int aurgument");
+	}
+	
+}

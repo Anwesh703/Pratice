@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizard-TfsImportWizard">
+	</section>
+	<section name="com.microsoft.tfs.client.common.ui.dialogs.connect.CredentialsDialog">
+		<item key="SINCE" value="06/20/23 13:07:40"/>
+		<item key="VIEWS" value="1"/>
+		<item key="ACCUMULATED_OPEN_TIME" value="12509"/>
+		<item key="TIME_COUNTS" value="1"/>
+		<item key="DIALOG_ORIGIN_X" value="517"/>
+		<item key="DIALOG_ORIGIN_Y" value="73"/>
+		<item key="DIALOG_WIDTH" value="886"/>
+		<item key="DIALOG_HEIGHT" value="491"/>
+	</section>
+</section>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ECE">
+  <test name="Test">
+    <classes>
+      <class name="AutomationTesting.SeleniumTesting.LoansRate">
+      <methods>
+       <exclude name="personalLoan"/>
+       </methods>
+       </class>
+       <class name="AutomationTesting.SeleniumTesting.LoanRate2">
+       <methods>
+       <include name="BikeLoan"/>
+       <include name="BikeLoanoffertrain"/>
+       </methods>
+       </class>
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,31 @@
+package Training;
+
+public class ConstructorExample {
+public int a;
+public int b;
+	//AccessModifier Classname()
+	public ConstructorExample() {
+		
+	}
+public ConstructorExample(int a,int b) {
+		 this.a=a;
+		 this.b=b;
+		 System.out.println(a+b);
+	}
+public ConstructorExample(int b) {
+	 System.out.println(b);
+}
+public ConstructorExample(double b) {
+	 System.out.println(b);
+}
+	public static void main(String[] args) {
+		ConstructorExample ce= new ConstructorExample();
+		ConstructorExample ce1= new ConstructorExample(312.3);
+		ConstructorExample ce2= new ConstructorExample(34);
+		ConstructorExample ce4= new ConstructorExample(53);
+		ConstructorExample ce3= new ConstructorExample(34,423);
+		
+
+	}
+
+}
