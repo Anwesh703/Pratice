@@ -1,0 +1,28 @@
+package AutomationTestingTraining.ProgramsAndCollections;
+
+public class ContinuesMaxChar {
+	public static void main(String[] args) {
+		String str = "ggggggjjjjjggkkkkkffkkkffffff";
+		maxChars(str);
+	}
+	public static void maxChars(String str) {
+		char maxChar = str.charAt(0);
+		int maxCount = 1;
+		int currentCount = 1;
+		for(int i=1;i<str.length();i++) {
+			if(str.charAt(i)==str.charAt(i-1)) {
+				currentCount++;
+			}else if(currentCount>maxCount){
+				maxCount = currentCount;
+				maxChar = str.charAt(i-1);			
+			}	currentCount = 1; 
+			
+		}
+		if(currentCount>maxCount) {
+			maxCount = currentCount;
+			maxChar = str.charAt(str.length()-1);
+		}
+		System.out.println(maxCount);
+		}
+	
+}

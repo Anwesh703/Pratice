@@ -17,7 +17,7 @@ import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class stepDefination {
-	
+	WebDriver driver;
 	public WebDriver InitializeDriver()
 	{
 //		System.setProperty("webdriver.chrome.driver", "C:\\SeleniumDrivers\\chromedriver.exe");
@@ -32,12 +32,12 @@ public class stepDefination {
     	options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
     	options.addArguments("--no-sandbox"); // Bypass OS security model 
     	WebDriverManager.chromedriver().setup();
-    	WebDriver driver= new ChromeDriver();
+    	driver= new ChromeDriver();
     	driver.manage().deleteAllCookies();
     	
     	return driver;
 	}
-	WebDriver driver;
+	
 	public stepDefination(){
 	 driver = InitializeDriver();
 	}
@@ -102,7 +102,7 @@ public void clicks_on_login_button() {
 	public void user_is_on_https_dte_deloitte_com_te_expense_summary_aspx_dte_home_page(String url) {
 		new stepDefination();
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(0, null);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 	}
 	

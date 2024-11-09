@@ -12,7 +12,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.log4testng.Logger;
 
-import AutomationTesting.SeleniumTesting.ExcelDataDriven;
+import util.ExcelDataDriven;
 import util.WebKeywords;
 
 public class FacebookLogin {

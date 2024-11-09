@@ -1,0 +1,54 @@
+package AutomationTestingTraining.ProgramsAndCollections;
+
+public class ContinuesMaxChar {
+	public static void main(String[] args) {
+		String str = "ggggggjjjjjjjjggkkkkkffkkkffffff";
+		maxContinuesChar(str);
+		double[] prices = {3.4,2.5,6.1,1.1};
+		stockExchange();
+	}
+	public static void maxContinuesChar(String str) {
+		char maxChar = str.charAt(0);
+		int maxCount = 1;
+		int currentCount = 1;
+		for(int i=1;i<str.length();i++) {
+			if(str.charAt(i)==str.charAt(i-1)) {
+				currentCount++;
+			}else {if(currentCount>maxCount){
+				maxCount = currentCount;
+				maxChar = str.charAt(i-1);			
+			}currentCount = 1; 
+			}				
+		}
+		if(currentCount>maxCount) {
+			maxCount = currentCount;
+			maxChar = str.charAt(str.length()-1);
+		}
+		System.out.println(maxChar + " "+ maxCount);
+		}
+	public static void stockExchange(int[] prices) {
+		if(prices == null || prices.length<2) {
+			System.out.println("given data is not valid for stock ");
+		}
+		int maxProfit = 0;
+		int minPrice = prices[0];
+		int minPriceIndexDate = 0;
+		int maxPriceIndexDate = 0;
+		
+	for(int i=1;i<prices.length;i++) {
+		if(prices[i]<minPrice) {
+			minPrice = prices[i];
+			minPriceIndexDate = i;
+		}
+		else {
+			int profit = prices[i]-minPrice;
+			if(profit>maxProfit) {
+				maxProfit = profit;	
+				maxPriceIndexDate = i;
+			}
+		}
+	}
+	System.out.println("the stock bought date is "+minPriceIndexDate+
+			" and sold at "+minPriceIndexDate+" for profit of "+maxProfit);
+	}
+}

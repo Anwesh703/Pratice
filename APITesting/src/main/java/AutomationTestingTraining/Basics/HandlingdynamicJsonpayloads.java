@@ -40,15 +40,13 @@ public class HandlingdynamicJsonpayloads {
 
 				post("/Library/Addbook.php").
 
-				then().assertThat().statusCode(200).
+				then().log().all().assertThat().statusCode(200).
 
 				extract().response().asString();
 
 		JsonPath js = ReusableMethods.rawToJson(resp);
-
-		String id = js.get("ID");
-
-		System.out.println(id);
+		//String id = js.get("ID");
+        //System.out.println(id);
 
 		// deleteBook
 
@@ -58,7 +56,7 @@ public class HandlingdynamicJsonpayloads {
 	public Object[][] getData()
 
 	{
-		return new Object[][] { { "das", "7912" }, { "jaswan", "3121" }, { "kosa", "8310" } };
+		return new Object[][] { { "dasada", "7912" }, { "jaswands", "3121" }, { "kosadsd", "8310" } };
 
 	}
 

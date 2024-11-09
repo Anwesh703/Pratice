@@ -1,7 +1,7 @@
 Feature: Portal login
 
 #dataTable
-@smokeTest
+@smokeTest @Dtest
 Scenario: Home page default login page
 Given user is on landing page
 #When user enter the "anwesh" and "password" credentials*

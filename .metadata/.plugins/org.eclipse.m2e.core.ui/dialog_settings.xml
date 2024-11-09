@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\anwreddy\Desktop\AutomationStorage\AutomationPractice\APITesting"/>
 			<item value="C:\Automation\Dummy\AtomationTest"/>
 			<item value="C:\Automation\Dummy\SeleniumTesting"/>
 			<item value="C:\Automation\Dummy\Automation"/>
@@ -33,29 +34,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="AutomationTestingTraining.APITesting"/>
-			<item value="AutomationTestingTraining.APITesing"/>
-			<item value="AutomationTestingTraining.training"/>
-			<item value="CucumberAutomation"/>
-			<item value="CucumberAutomation.MavenTesing"/>
-			<item value="Cucumber.AtomationTest"/>
-			<item value="AutomationTesting.SeleniumTesting"/>
-			<item value="AutomationTesting.Selenium"/>
 		</list>
 		<list key="groupId">
-			<item value="AutomationTestingTraining"/>
-			<item value="CucumberAutomation"/>
-			<item value="Cucumber"/>
-			<item value="AutomationTesting"/>
 		</list>
 		<list key="artifactId">
-			<item value="APITesting"/>
-			<item value="APITesing"/>
-			<item value="training"/>
-			<item value="MavenTesing"/>
-			<item value="AtomationTest"/>
-			<item value="SeleniumTesting"/>
-			<item value="Selenium"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -91,5 +73,20 @@
 	<section name="org.eclipse.m2e.core.pom.overview">
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Automation"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Automation"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
 	</section>
 </section>
