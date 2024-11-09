@@ -1,0 +1,16 @@
+package AutomationTestingTraining.ProgramsAndCollections;
+
+public class ContinuesMaxChar {
+	public static void main(String[] args) {
+		String str = "ggggggjjjjjggkkkkkffkkkffffff";
+		maxChar(str);
+	}
+	public static void maxChar(String str) {
+		char firstChar = str.charAt(0);
+		int min = 0;
+		for(int i=1;i<str.length();i++) {
+			
+		}
+		}
+	
+}

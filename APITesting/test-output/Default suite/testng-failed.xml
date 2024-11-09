@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutomationTestingTraining.Basics.HandlingdynamicJsonpayloads">
+      <class name="AutomationTestingTraining.ProgramsAndCollections.Palindrome">
         <methods>
-          <include name="addBook" invocation-numbers="0 1 2"/>
+          <include name="palindrome"/>
         </methods>
-      </class> <!-- AutomationTestingTraining.Basics.HandlingdynamicJsonpayloads -->
+      </class> <!-- AutomationTestingTraining.ProgramsAndCollections.Palindrome -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

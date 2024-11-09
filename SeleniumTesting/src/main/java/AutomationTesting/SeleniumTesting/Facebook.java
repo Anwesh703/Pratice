@@ -12,6 +12,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
 import POM.FacebookLogin;
+import util.ExcelDataDriven2;
 import util.ReadPropertyFile;
 
 public class Facebook extends BaseClass{
@@ -26,9 +27,9 @@ public void Facebook() throws IOException, InterruptedException {
 	 
 	 ExcelDataDriven2 excel = new ExcelDataDriven2();
 		
-		ArrayList<Hashtable<String, String>> al= excel.Run("C:\\Users\\anwreddy\\ExcelData\\FacebookLogin.xlsx","FacebookLogin","TestCases","AnweshLogin");
-		for(Hashtable<String, String> i : al) {
-		System.out.println(i);}
+//		ArrayList<Hashtable<String, String>> al= excel.Run("C:\\Users\\anwreddy\\ExcelData\\FacebookLogin.xlsx","FacebookLogin","TestCases","AnweshLogin");
+//		for(Hashtable<String, String> i : al) {
+//		System.out.println(i);}
 //	driver.get(url);
 //	ArrayList<WebElement> al= new ArrayList<>(driver.findElements(By.xpath("//table[@class='confluenceTable']/tbody/tr/td[3]")));
 //	for(int i=0;i<al.size();i++) {

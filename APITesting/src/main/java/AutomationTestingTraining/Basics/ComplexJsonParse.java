@@ -4,11 +4,40 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import org.testng.Assert;
+
 import AutomationTestingTraining.Reusables.ReusableFiles;
 import io.restassured.path.json.JsonPath;
 
 public class ComplexJsonParse {
 public static void main(String[] args) throws IOException {
+	
+	
+//	1. Print No of courses returned by API
+//	2.Print Purchase Amount
+//	3. Print Title of the first course
+//	4. Print All course titles and their respective Prices
+//	5. Print no of copies sold by RPA Course
+//	6. Verify if Sum of all Course prices matches with Purchase Amount
+	
+JsonPath js = new JsonPath(ReusableFiles.coursePrice());
+int size =js.getInt("courses.size()");
+int total = js.getInt("dashboard.purchaseAmount");
+js.get("courses[0].title");
+int SumofallCourse =0;
+for(int i=0;i<size;i++) {
+	System.out.println("The course title is "+js.get("courses["+i+"].title").toString());
+	System.out.println("The Price of course is "+js.getInt("courses["+i+"].price"));
+	SumofallCourse+=js.getInt("courses["+i+"].price")*js.getInt("courses["+i+"].copies");
+	if(js.get("courses["+i+"].title").equals("RPA")) {
+		System.out.println("The copies of RPA is "+js.get("courses["+i+"].copies").toString());
+	}
+}Assert.assertEquals(SumofallCourse, total);
+System.out.println("The SumofallCourse is "+SumofallCourse);
+
+
+
+	
 //	
 //	JsonPath js = new JsonPath(ReusableFiles.coursePrice());
 //	//Print No of courses returned by API

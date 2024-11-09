@@ -1,0 +1,10 @@
+package AutomationTestingTraining.ProgramsAndCollections;
+
+public class ContinuesMaxChar {
+	public static void main(String[] args) {
+		//"ggggggjjjjjggkkkkkffkkkffffff"
+	}
+	public static void main(int s) {
+		}
+	
+}

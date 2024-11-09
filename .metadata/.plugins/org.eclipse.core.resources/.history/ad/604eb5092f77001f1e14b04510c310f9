@@ -1,0 +1,11 @@
+package AutomationTestingTraining.ProgramsAndCollections;
+
+public class ContinuesMaxChar {
+	public static void main(String[] args) {
+		main(9);
+	}
+	public static void main(int s) {
+		System.out.println("In sub main");
+	}
+	
+}

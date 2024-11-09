@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.26" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="DTE Time charge" name="DTE Time charging - Example #1.1" time="0.031">
+<testsuite name="Cucumber" time="0.18" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="DTE Time charge" name="DTE Time charging - Example #1.1" time="0.011">
 <system-out><![CDATA[
 Given user is on https://dte.deloitte.com/te/ExpenseSummary.aspx DTE home page.passed
 When user clicks on hyperlink of current week...............................passed
